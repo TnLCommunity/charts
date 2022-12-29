@@ -3,7 +3,26 @@ entries:
   corndogs:
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2022-12-29T23:50:23.745355171Z"
+    created: "2022-12-29T23:57:40.069585403Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: ~12.1.6
+    - condition: appconfig.prometheusEnabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: ~15.0.2
+    description: A Helm chart for Kubernetes
+    digest: 4c076069df23cc0dc48a99de15f333208f03ec556072bc2acca7ffb7bef56b90
+    name: corndogs
+    type: application
+    urls:
+    - corndogs-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2022-12-29T23:57:40.057929885Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -22,7 +41,7 @@ entries:
     version: 1.1.0-alpha.2
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2022-12-29T23:50:23.732504137Z"
+    created: "2022-12-29T23:57:40.046146364Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -41,7 +60,7 @@ entries:
     version: 1.1.0-alpha.1
   - apiVersion: v2
     appVersion: 0.3.0-alpha
-    created: "2022-12-29T23:50:23.7184143Z"
+    created: "2022-12-29T23:57:40.035099663Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -60,7 +79,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 0.3.0-alpha
-    created: "2022-12-29T23:50:23.705785966Z"
+    created: "2022-12-29T23:57:40.023318241Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -77,4 +96,4 @@ entries:
     urls:
     - corndogs-1.0.0.tgz
     version: 1.0.0
-generated: "2022-12-29T23:50:23.692297131Z"
+generated: "2022-12-29T23:57:40.010403589Z"
