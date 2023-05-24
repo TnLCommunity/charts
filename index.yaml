@@ -2,8 +2,27 @@ apiVersion: v1
 entries:
   corndogs:
   - apiVersion: v2
+    appVersion: 1.3.12
+    created: "2023-05-24T16:40:25.421233776Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami/
+      version: ~12.1.6
+    - condition: appconfig.prometheusEnabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: ~15.0.2
+    description: A Helm chart for Kubernetes
+    digest: 8fff3e43fccffbfc51e87d846af171362c8d41b4a019888afc358cc5ee44d0f7
+    name: corndogs
+    type: application
+    urls:
+    - corndogs-1.3.7.tgz
+    version: 1.3.7
+  - apiVersion: v2
     appVersion: 1.3.11
-    created: "2023-05-24T00:24:01.619362687Z"
+    created: "2023-05-24T16:40:25.410072988Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -22,7 +41,7 @@ entries:
     version: 1.3.6
   - apiVersion: v2
     appVersion: 1.3.10
-    created: "2023-05-24T00:24:01.606790038Z"
+    created: "2023-05-24T16:40:25.397741101Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -41,7 +60,7 @@ entries:
     version: 1.3.5
   - apiVersion: v2
     appVersion: 1.3.10
-    created: "2023-05-24T00:24:01.594553387Z"
+    created: "2023-05-24T16:40:25.385022115Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -60,7 +79,7 @@ entries:
     version: 1.3.4
   - apiVersion: v2
     appVersion: 1.3.10
-    created: "2023-05-24T00:24:01.583028734Z"
+    created: "2023-05-24T16:40:25.372522028Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -79,7 +98,7 @@ entries:
     version: 1.3.3
   - apiVersion: v2
     appVersion: 1.3.10
-    created: "2023-05-24T00:24:01.571234081Z"
+    created: "2023-05-24T16:40:25.36092804Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -98,7 +117,7 @@ entries:
     version: 1.3.2
   - apiVersion: v2
     appVersion: 1.3.1
-    created: "2023-05-24T00:24:01.560133826Z"
+    created: "2023-05-24T16:40:25.348825853Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -117,7 +136,7 @@ entries:
     version: 1.3.1
   - apiVersion: v2
     appVersion: 1.3.1
-    created: "2023-05-24T00:24:01.54672498Z"
+    created: "2023-05-24T16:40:25.337820565Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -136,7 +155,7 @@ entries:
     version: 1.3.1-alpha.1
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2023-05-24T00:24:01.530403346Z"
+    created: "2023-05-24T16:40:25.325094379Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -155,7 +174,7 @@ entries:
     version: 1.3.0
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2023-05-24T00:24:01.518984692Z"
+    created: "2023-05-24T16:40:25.312784292Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -174,7 +193,7 @@ entries:
     version: 1.3.0-alpha.1
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2023-05-24T00:24:01.506570742Z"
+    created: "2023-05-24T16:40:25.299459306Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -193,7 +212,7 @@ entries:
     version: 1.2.0
   - apiVersion: v2
     appVersion: 1.2.0
-    created: "2023-05-24T00:24:01.494197592Z"
+    created: "2023-05-24T16:40:25.287274619Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -212,7 +231,7 @@ entries:
     version: 1.2.0-alpha.1
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2023-05-24T00:24:01.482176041Z"
+    created: "2023-05-24T16:40:25.274932133Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -231,7 +250,7 @@ entries:
     version: 1.1.0
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2023-05-24T00:24:01.465815007Z"
+    created: "2023-05-24T16:40:25.263547645Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -250,7 +269,7 @@ entries:
     version: 1.1.0-alpha.2
   - apiVersion: v2
     appVersion: 1.1.0
-    created: "2023-05-24T00:24:01.454145954Z"
+    created: "2023-05-24T16:40:25.251007858Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -269,7 +288,7 @@ entries:
     version: 1.1.0-alpha.1
   - apiVersion: v2
     appVersion: 0.3.0-alpha
-    created: "2023-05-24T00:24:01.442038303Z"
+    created: "2023-05-24T16:40:25.238856271Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -288,7 +307,7 @@ entries:
     version: 1.0.1
   - apiVersion: v2
     appVersion: 0.3.0-alpha
-    created: "2023-05-24T00:24:01.431790944Z"
+    created: "2023-05-24T16:40:25.227803383Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -305,4 +324,4 @@ entries:
     urls:
     - corndogs-1.0.0.tgz
     version: 1.0.0
-generated: "2023-05-24T00:24:01.419548093Z"
+generated: "2023-05-24T16:40:25.216201595Z"
